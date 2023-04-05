@@ -16,9 +16,6 @@ struct UserProfile: Codable {
     let external_urls: [String: String]
     let id: String
     let product:  String
-    let images: [userImage]
+    let images: [APIImage]
 }
 
-struct userImage: Codable {
-    let url: String
-}
