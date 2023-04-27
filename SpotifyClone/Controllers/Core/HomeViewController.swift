@@ -273,6 +273,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             vc.title = playlist.name
             vc.navigationItem.largeTitleDisplayMode = .never
             navigationController?.pushViewController(vc, animated: true)
+            vc.tabBarController?.tabBar.backgroundColor = .systemBackground
             break
             
         case .newReleases:
